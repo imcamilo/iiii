@@ -2,12 +2,11 @@
   (:require [clojure.test :refer :all]
             [iiii.core :refer :all]))
 
-(deftest worked
-  (testing "work"
-    (is (= "i i" (work "a a")))
-    (is (= "ibi" (work "aba")))
-    (is (= "simithing" (work "something")))
-    (is (= "ibicdi" (work "abecde")))))
+(deftest transform-test
+  (testing "replace"
+    (is (= (rep-v "a") "i"))
+    (is (= (rep-v "o") "i"))
+    ))
 
 (deftest main-test
   (testing "-main"

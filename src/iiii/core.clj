@@ -2,6 +2,6 @@
   (:require [clojure.string :as str])
   (:gen-class))
 
-(defn work [args] (str/replace (str/join "" args) #"a|e|i|o|u" "i"))
+(defn rep-v [args] (str/replace (str/join " " args) #"a|e|o|u" "i"))
 
-(defn -main [& args] (println work args))
+(defn -main [& args] (println (rep-v args)))
