@@ -4,13 +4,7 @@ iiii
 
 ## Test
 
-lein test
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar iiii-0.1.0-standalone.jar [args]
+    lein test
 
 ## How to run
 
